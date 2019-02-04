@@ -9,7 +9,7 @@ package ejercicioinversiones;
  *
  * @author Estudiante
  */
-public class EjercicioInversiones {
+public class Main {
 
     /**
      * @param args the command line arguments

@@ -16,7 +16,7 @@ public class Cliente {
     private int telefono;
     private int edad;
     private String email;
-    private Asset[] activos;
+    private Asset[] assets;
 
     public Cliente(int cc, String nombre, String apellido, int telefono, int edad, String email) {
         this.cc = cc;
@@ -25,7 +25,17 @@ public class Cliente {
         this.telefono = telefono;
         this.edad = edad;
         this.email = email;
-        this.activos = new Asset[10];
+        this.assets = new Asset[10];
+    }
+    
+    public boolean addAssets (Asset asset) {
+        for (Asset a : assets){
+            if (a != null){
+                a = asset;
+                return true;
+            }
+        }
+        return false;
     }
     
     
