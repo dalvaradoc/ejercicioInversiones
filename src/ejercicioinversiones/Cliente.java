@@ -10,7 +10,7 @@ package ejercicioinversiones;
  * @author Estudiante
  */
 public class Cliente {
-    private int cc;
+    private int id;
     private String nombre;
     private String apellido;
     private int telefono;
@@ -18,8 +18,8 @@ public class Cliente {
     private String email;
     private Asset[] assets;
 
-    public Cliente(int cc, String nombre, String apellido, int telefono, int edad, String email) {
-        this.cc = cc;
+    public Cliente(int id, String nombre, String apellido, int telefono, int edad, String email) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
@@ -37,9 +37,14 @@ public class Cliente {
         }
         return false;
     }
-    
-    
-    
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public Asset[] getAssets() {
+        return assets;
+    }    
     
     
 }

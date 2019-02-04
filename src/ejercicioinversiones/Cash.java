@@ -12,6 +12,10 @@ package ejercicioinversiones;
 public class Cash implements Asset {
     
     private double amount;
+
+    public Cash(double amount) {
+        this.amount = amount;
+    }
     
     @Override
     public double getMarketValue() {

@@ -17,6 +17,8 @@ public class DividendStock extends Stock{
         this.dividends = dividends;
     }
     
+    
+    
     @Override
     public double getMarketValue () {
         return (this.totalShares * this.currentPrice ) + this.dividends ;
